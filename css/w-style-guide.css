@@ -310,19 +310,6 @@
     font-weight: 400;
 }
 
-.text-xl-bold {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 700;
-}
-.text-xl-regular {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-}
-
 .text-lg-bold {
     font-family: "Inter", sans-serif;
     font-size: 18px;
