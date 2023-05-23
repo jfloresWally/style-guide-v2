@@ -1,49 +1,46 @@
-# Style Guide
-Este repositorio almacena los estilos generales de Wally, 
-
 ## General
-Una guia de estilos alamcena los colores y estilos tipográficos de una marca. En este caso de Wally, existen dos formas de aplicar los style guide a un proyecto por CSS o por el uso de un Framework en este caso Tailwind.
+Una guia de estilos almacena los colores y estilos tipográficos de una marca. En este caso de Wally, existen dos formas de aplicar los style guide a un proyecto por CSS o por el uso de un Framework en este caso Tailwind.
 
 ## 1.- CSS
-Para comenzar a usar nuestros estilos de CSS es necesario descargar este repositio, seguidamente acceder a la carpeta css/ dentro de la cual encontraras dos archivos, en el primer archivo **w-style-guide.css** encontrarás los estilos de wally sin ser minificados ya que el propósito de este archivo es facilitar la lectura de los estilos. Este primer archivo no se recomienda usarlo directamente en una página  
+Para comenzar a usar nuestros estilos de CSS es necesario descargar este repositorio, seguidamente acceder a la carpeta css/ dentro de la cual encontraras dos archivos, en el primer archivo **w-style-guide.css** encontrarás los estilos de wally sin ser minificados ya que el propósito de este archivo es facilitar la lectura de los estilos. Este primer archivo no se recomienda usarlo directamente en una página porque no está minificado. Para utilizar la versión minificada se debe usar el archivo **w-style-guide-minify.css** 
 
-### ¿Cómo aplicar colores?
-Cada grupo de colores generalmente se encuentra divido en una escala de 50 al 300. Existe otro grupo de colores que comprende desde 50 hasta 700.
+### 1.1 Colores
+Los colores de Wally están representados como custom properties (variables CSS)
 ```
 :root {
-  --w-cool-gray-50: #FFFFFF;
-  --w-cool-gray-100: #F9FAFB;
-  --w-cool-gray-200: #F3F4F6;
-  --w-cool-gray-300: #E5E7EB;
-  --w-cool-gray-400: #D1D5DB;
-  --w-cool-gray-500: #6B7280;
-  --w-cool-gray-600: #374151;
-  --w-cool-gray-700: #12131F;
-  --w-green-50: #E7F8EE;
-  --w-green-100: #A2E7BF;
-  --w-green-200: #25B562;
-  --w-green-300: #1A6B3C;
-  --w-blue-50: #EFF6FF;
-  --w-blue-100: #BFDBFE;
-  --w-blue-200: #3B82F6;
-  --w-blue-300: #1D4ED8;
-  --w-red-50: #FEF2F2;
-  --w-red-100: #FECACA;
-  --w-red-200: #EF4444;
-  --w-red-300: #B91C1C;
-  --w-yellow-50: #FEFCE8;
-  --w-yellow-100: #FEF08A;
-  --w-yellow-200: #EAB308;
-  --w-yellow-300: #A16207;
-  --w-light-blue: #3293CF;
-  --w-scarlet: #F65E47;
-  --w-amber: #FDC980;
-  --w-overlay: rgba(5,3,3,0.75);
+  --cool-gray-50: #FFFFFF;
+  --cool-gray-100: #F9FAFB;
+  --cool-gray-200: #F3F4F6;
+  --cool-gray-300: #E5E7EB;
+  --cool-gray-400: #D1D5DB;
+  --cool-gray-500: #6B7280;
+  --cool-gray-600: #374151;
+  --cool-gray-700: #12131F;
+  --green-50: #E7F8EE;
+  --green-100: #A2E7BF;
+  --green-200: #25B562;
+  --green-300: #1A6B3C;
+  --blue-50: #EFF6FF;
+  --blue-100: #BFDBFE;
+  --blue-200: #3B82F6;
+  --blue-300: #1D4ED8;
+  --red-50: #FEF2F2;
+  --red-100: #FECACA;
+  --red-200: #EF4444;
+  --red-300: #B91C1C;
+  --yellow-50: #FEFCE8;
+  --yellow-100: #FEF08A;
+  --yellow-200: #EAB308;
+  --yellow-300: #A16207;
+  --light-blue: #3293CF;
+  --scarlet: #F65E47;
+  --amber: #FDC980;
+  --overlay: rgba(5,3,3,0.75);
 }
 ```
 
-Estas variables a su vez se encuentran representadas como clases de CSS en el archivo **styles-wally.css** .
-```
+Estas variables a su vez se encuentran representadas como clases de CSS, se puede aplicar como color de fondo o como color de texto, para ello solo es necesario agregar **bg** antes del nombre del color para aplicar el color como fondo y para aplicar un color a un texto solo es necesario agregar **c** antes del nombre del color. 
+ ```
 /* Background */
 .bg-cool-gray-50 {
     background-color: var(--w-cool-gray-50);
@@ -59,24 +56,47 @@ Para aplicar estas clases solo es necesario agregarlas a un elemento HTML.
 <header class="bg-cool-gray-50">Soy un Header</header>
 ```
 
-### Tipografías de Wally
-Para aplicar las tipografías de Wally solo es necesario usar las clases del archivo **styles-wally.css** .
+### 1.2 Tipografias
+La siguiente lista muestra el nombre de clase de las tipografias de Wally.
+
 ```
 /* Typography class */
-.text-6xl-bold {
-    font-family: "Inter", sans-serif;
-    font-size: 60px;
-    line-height: 64px;
-    font-weight: 700;
-}
-.text-6xl-regular {
-    font-family: "Inter", sans-serif;
-    font-size: 60px;
-    line-height: 64px;
-    font-weight: 400;
-}
+.text-6xl-bold  -> 60px Bold
+.text-6xl-regular  -> 60px Regular
+
+.text-5xl-bold  -> 48px Bold
+.text-5xl-regular  -> 48px Regular
+
+.text-4xl-bold  -> 36px Bold
+.text-4xl-regular  -> 36px Regular
+
+.text-3xl-bold  -> 30px Bold
+.text-3xl-regular  -> 30px Regular
+
+.text-2xl-bold  -> 24px Bold
+.text-2xl-regular  -> 24px Regular
+
+.text-xl-bold  -> 20px Bold
+.text-xl-regular  -> 20px Regular
+
+.text-lg-bold  -> 18px Bold
+.text-lg-regular  -> 18px Regular
+
+.text-base-bold  -> 16px Bold
+.text-base-regular  -> 16px Regular
+
+.text-sm-bold  -> 14px Bold
+.text-sm-regular  -> 14px Regular
+
+.text-xs-bold  -> 12px Bold
+.text-xs-regular  -> 12px Regular
+
+.text-small-bold  -> 10px Bold
+.text-small-regular  -> 10px Regular
+
 ```
-Seguidamente, aplicarlas a una etiqueta de texto HTML.
+
+Para aplicar las tipografías de Wally solo es necesario usar las clases en una etiqueta de texto
 ```
 <h2 class="text-6xl-regular">Soy un titular</h2>
 ```
@@ -84,13 +104,13 @@ Seguidamente, aplicarlas a una etiqueta de texto HTML.
 El texto también puede ser responsive. Para lograrlo solo debes anteponer las siguientes siglas a tu clase de texto.
 ```
  /* breakpoints */
-sm: 576px;
-md: 768px;
-lg: 992px;
-xl: 1200px;
-xxl: 1400px;
+sm  > 640px;
+md -> 768px;
+lg -> 1024px;
+xl -> 1280px;
+xxl -> 1536px;
 ```
-Un ejemplo: **md-text-6xl-bold** esto aplicaría una medida de 60px al texto cuando el viewport tenga 768px de ancho.  Esto sería lo mismo que crear la siguiente media query.
+Un ejemplo: **md-text-6xl-bold** esto aplicaría a una medida de 60px al texto cuando el viewport tenga 768px de ancho.  Esto sería lo mismo que crear la siguiente media query.
 ```
 @media (min-width: 768px) {
     .md-text-6xl-bold {
@@ -105,14 +125,12 @@ Pero en lugar de crearla, solo tienes que agregarla como una clase a tu etiqueta
 ```
 <h2 class="md-text-6xl-bold">Soy un titular</h2>
 ```
-### Figma y Style Guide
+### 1.3 Figma
 Hemos preparado un archivo de figma que te explica como identificar que colores y que tipografías debes usar para cada caso.
 https://www.figma.com/file/6S1u1I7a7KLurDM0YqYjPV/Style-Guide?node-id=2740%3A14431&t=J1UwftocUgtKOUTJ-1  te invitamos a revisarlo.
 
 Recuerda que si no tienes acceso, puedes solicitar acceso como "viewer" con tu cuenta de Wally.
 
-### Optimización 
-Para optimiar tu CSS te recomentamos usar https://purifycss.online/ 
 
 ## 2.- Tailwind
 Si quieres usar los estilos de Wally en Tailwind solo es necesario agregar un tema a tu archivo de configuración de Tailwind.
