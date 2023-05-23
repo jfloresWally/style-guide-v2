@@ -178,7 +178,7 @@ module.exports = {
 }
 ```
 
-### ¿Cómo aplicar colores?
+### 2.1 ¿Cómo aplicar colores?
 Con Tailwind es mucho más sencillo aplicar los colores a un elemento, ya que se generan de forma automática luego de agregar los colores a **theme**
 
 Para fondos, solo tienes que agregar **bg** antes del nombre del color, Ejemplo: **bg-green-200**
@@ -193,10 +193,10 @@ Para aplicar colores sobre los textos, solo es necesario agregar **text** antes 
 <h2 class="text-cool-gray-600">Soy un titular</h2>
 ```
 
-### Tipografías de Wally
+### 2.2 Tipografías de Wally
 Tailwind tiene la particularidad de usar la misma tipografía que usa Wally. Asi que solo tienes que revisar la documentación de Tailwind https://tailwindcss.com/docs/font-size .
 
-### Optimización
+### 2.3 Optimización
 1.- Recomendamos solo usar dos tipos de pesos de fuentes en Tailwind **Normal** que es igual a **Regular** y **Bold** Esto ayudará a mejorar el performance de cualquier proyecto.
 
 2.- Tailwind cuenta con comandos CLI que permiten minificar tu codigo CSS y solo incluir las clases que usas y no las que no se utilizan. Así que no necesitas usar Purify.
