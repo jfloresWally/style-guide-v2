@@ -1,17 +1,11 @@
 # Style Guide
 Este repositorio almacena los estilos generales de Wally, 
 
+## General
+Una guia de estilos alamcena los colores y estilos tipográficos de una marca. En este caso de Wally, existen dos formas de aplicar los style guide a un proyecto por CSS o por el uso de un Framework en este caso Tailwind.
+
 ## 1.- CSS
-Para comenzar puedes descargar este repositorio y una vez descargado. Debes incluir dos archivos a tu proyecto, el primero lo encontrarás en **build/css/variables.css** , este archivo guarda los colores de Wally en variables de CSS.
-
-El segundo archivo que necesitaras se encuentra en la siguiente ruta **styles/styles-wally.css** este archivo contiene reglas CSS para colores y tipografías.
-
-Seguidamente, debes cambiar la ruta del import del archivo **styles-wally.css** para que siempre apunte a las variables CSS. 
-```
-/* Import variables from figma */
-@import ".././build/css/variables.css";
-```
-Con todo configurado puedes empezar a aplicar los estilos de Wally a tu proyecto.
+Para comenzar a usar nuestros estilos de CSS es necesario descargar este repositio, seguidamente acceder a la carpeta css/ dentro de la cual encontraras dos archivos, en el primer archivo **w-style-guide.css** encontrarás los estilos de wally sin ser minificados ya que el propósito de este archivo es facilitar la lectura de los estilos. Este primer archivo no se recomienda usarlo directamente en una página  
 
 ### ¿Cómo aplicar colores?
 Cada grupo de colores generalmente se encuentra divido en una escala de 50 al 300. Existe otro grupo de colores que comprende desde 50 hasta 700.
