@@ -1,0 +1,50 @@
+/*
+buttons
+*/
+
+.bt-primary {
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: $space-12 $space-24;
+    background-color: $green-200;
+    font-family: 'Inter', sans-serif;
+    font-size: $space-16;
+    font-weight: 700;
+    border-radius: $space-4;
+    line-height: $space-24;
+    color: $cool-gray-50;
+  }
+  .bt-primary:hover {
+    background-color: $green-300;
+  }
+  .bt-primary:active {
+    background-color: $green-300;
+  }
+  .bt-fill {
+    width: 100%;
+  }
+  
+  .bt-secondary {
+    display: inline-flex;
+    line-height: $space-24;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    justify-content: center;
+    padding: $space-12 $space-24;
+    background-color: $cool-gray-100;
+    font-family: 'Inter', sans-serif;
+    font-size: $space-16;
+    font-weight: 700;
+    border-radius: $space-4;
+    color: $cool-gray-600;
+    box-shadow: 0 0 2px $cool-gray-500;
+  }
+  
+  .bt-secondary:hover {
+    background-color: $cool-gray-300;
+  }
+  .bt-secondary:active {
+    background-color: $cool-gray-300;
+  }
