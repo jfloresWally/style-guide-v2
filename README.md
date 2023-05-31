@@ -1,5 +1,5 @@
 ## General
-Una guia de estilos almacena los colores y estilos tipográficos de una marca. En este caso de Wally, existen dos formas de aplicar los style guide a un proyecto por CSS o por el uso de un Framework en este caso Tailwind.
+Esta guia de estilos almacena los colores y estilos tipográficos de Wally, existen tres formas de aplicar los style guide a un proyecto, mediante CSS, Tailwind o Sass (en caso de sass se puede aplicar a la mayoría de los framewroks como boostrap.)
 
 ## 1.- CSS
 Para comenzar a usar nuestros estilos de CSS es necesario descargar este repositorio, seguidamente acceder a la carpeta css/ dentro de la cual encontraras dos archivos, en el primer archivo **w-style-guide.css** encontrarás los estilos de wally sin ser minificados ya que el propósito de este archivo es facilitar la lectura de los estilos. Este primer archivo no se recomienda usarlo directamente en una página porque no está minificado. Para utilizar la versión minificada se debe usar el archivo **w-style-guide-minify.css** 
@@ -200,3 +200,30 @@ Tailwind tiene la particularidad de usar la misma tipografía que usa Wally. Asi
 1.- Recomendamos solo usar dos tipos de pesos de fuentes en Tailwind **Normal** que es igual a **Regular** y **Bold** Esto ayudará a mejorar el performance de cualquier proyecto.
 
 2.- Tailwind cuenta con comandos CLI que permiten minificar tu codigo CSS y solo incluir las clases que usas y no las que no se utilizan. Así que no necesitas usar Purify.
+
+## 3.- SASS
+Sass es un preprocesador de CSS el cual nos permite dividir los estilos de CSS en un Arquitecutra como ITCSS o Atomic Design, con el objetivo de crear una forma de trabajo mas escalable con nuestros estilos 
+
+El style guide de Wlaly usa ITCSS y Atomics design quedando una estructura de carpetas de la sigueinte forma
+```
+/styles
+├── /atoms
+│       ├── button.scss
+├── /generic
+│       └── reset.scss
+├── /molecules
+│       ├── beta
+├── /organisms
+│       ├── beta
+├── /settings
+│       ├── breakpoints.scss
+│       └── colors.scss
+│       └── space.scss
+│       └── typography.scss
+├── utilities
+│       ├── colors.scss
+│       └── spacing.scss
+│       └── typography.scss
+└── index.scss
+```
+Esta arbol de carpeta se encuentra dentro de la carpeta sass/styles
