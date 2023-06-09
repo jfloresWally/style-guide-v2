@@ -176,7 +176,10 @@ module.exports = {
       'amber': '#FDC980',
 
     },
-  },
+    fontFamily: {
+      'inter': ['Inter', 'sans-serif']
+    },
+  }
 }
 ```
 
