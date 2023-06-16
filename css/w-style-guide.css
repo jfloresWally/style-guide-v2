@@ -311,13 +311,13 @@ Color Styles
 .text-6xl-bold {
     font-family: "Inter", sans-serif;
     font-size: 60px;
-    line-height: 64px;
+    line-height: 60px;
     font-weight: 700;
 }
 .text-6xl-regular {
     font-family: "Inter", sans-serif;
     font-size: 60px;
-    line-height: 64px;
+    line-height: 60px;
     font-weight: 400;
 }
 
@@ -438,13 +438,13 @@ Color Styles
     font-weight: 400;
 }
 
-.text-small-bold {
+.text-sxs-bold {
     font-family: "Inter", sans-serif;
     font-size: 10px;
     line-height: 12px;
     font-weight: 700;
 }
-.text-small-regular {
+.text-sxs-regular {
     font-family: "Inter", sans-serif;
     font-size: 10px;
     line-height: 12px;
@@ -457,13 +457,13 @@ Color Styles
     .sm-text-6xl-bold {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 700;
     }
     .sm-text-6xl-regular {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 400;
     }
     
@@ -597,13 +597,13 @@ Color Styles
         font-weight: 400;
     }
     
-    .sm-text-small-bold {
+    .sm-text-sxs-bold {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
         font-weight: 700;
     }
-    .sm-text-small-regular {
+    .sm-text-sxs-regular {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
@@ -615,13 +615,13 @@ Color Styles
     .md-text-6xl-bold {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 700;
     }
     .md-text-6xl-regular {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 400;
     }
     
@@ -755,13 +755,13 @@ Color Styles
         font-weight: 400;
     }
     
-    .md-text-small-bold {
+    .md-text-sxs-bold {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
         font-weight: 700;
     }
-    .md-text-small-regular {
+    .md-text-sxs-regular {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
@@ -773,13 +773,13 @@ Color Styles
     .lg-text-6xl-bold {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 700;
     }
     .lg-text-6xl-regular {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 400;
     }
     
@@ -913,13 +913,13 @@ Color Styles
         font-weight: 400;
     }
     
-    .lg-text-small-bold {
+    .lg-text-sxs-bold {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
         font-weight: 700;
     }
-    .lg-text-small-regular {
+    .lg-text-sxs-regular {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
@@ -931,13 +931,13 @@ Color Styles
     .xl-text-6xl-bold {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 700;
     }
     .xl-text-6xl-regular {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 400;
     }
     
@@ -1071,13 +1071,13 @@ Color Styles
         font-weight: 400;
     }
     
-    .xl-text-small-bold {
+    .xl-text-sxs-bold {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
         font-weight: 700;
     }
-    .xl-text-small-regular {
+    .xl-text-sxs-regular {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
@@ -1089,13 +1089,13 @@ Color Styles
     .xxl-text-6xl-bold {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 700;
     }
     .xxl-text-6xl-regular {
         font-family: "Inter", sans-serif;
         font-size: 60px;
-        line-height: 64px;
+        line-height: 60px;
         font-weight: 400;
     }
     
@@ -1229,13 +1229,13 @@ Color Styles
         font-weight: 400;
     }
     
-    .xxl-text-small-bold {
+    .xxl-text-sxs-bold {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
         font-weight: 700;
     }
-    .xxl-text-small-regular {
+    .xxl-text-sxs-regular {
         font-family: "Inter", sans-serif;
         font-size: 10px;
         line-height: 12px;
